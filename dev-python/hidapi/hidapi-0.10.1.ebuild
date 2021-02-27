@@ -13,7 +13,8 @@ SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 LICENSE="|| ( GPL-3 BSD cython-hidapi )"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="system-hidapi libusb"
+IUSE="+system-hidapi +libusb test"
+RESTRICT="!test? ( test )"
 
 DEPEND="system-hidapi? ( dev-libs/hidapi )"
 BDEPEND="${BDEPEND} dev-python/cython[${PYTHON_USEDEP}]"
@@ -23,5 +24,8 @@ python_test() {
 }
 
 python_configure_all() {
-        mydistutilsargs=( $(use_with system-hidapi libusb) )
+        mydistutilsargs=(
+                        $(use system-hidapi && echo '--with-system-hidapi' )
+                        $(use libusb || echo '--without-libusb' )
+                        )
 }
