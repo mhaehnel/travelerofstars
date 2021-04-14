@@ -57,7 +57,7 @@ RDEPEND="${PYTHON_DEPS}
 		>=dev-python/jinja-2.9[${PYTHON_USEDEP}]
 		>=dev-python/bleach-1.4.3[${PYTHON_USEDEP}]
         >=dev-python/typing-extensions-3.7.4[${PYTHON_USEDEP}]
-        >=dev-python/cryptography-3.3.2[${PYTHON_USEDEP}]
+        >=dev-python/cryptography-3.4.7[${PYTHON_USEDEP}]
         virtual/jpeg
         ldap? (
                 >=dev-python/matrix-synapse-ldap3-0.1.4[${PYTHON_USEDEP}]
