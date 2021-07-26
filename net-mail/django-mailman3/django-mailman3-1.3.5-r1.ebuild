@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7,8} )
+PYTHON_COMPAT=( python3_{7,8,9} )
 
 EGIT_REPO_URI="https://gitlab.com/mailman/${PN}.git"
 EGIT_COMMIT="c1715765ac13c3d6f27d6567450deaf717033a92"
