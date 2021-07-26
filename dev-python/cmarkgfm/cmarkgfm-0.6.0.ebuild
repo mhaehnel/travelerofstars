@@ -17,6 +17,8 @@ KEYWORDS="~amd64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-DEPEND="app-text/cmark"
+DEPEND="app-text/cmark
+		>=dev-python/cffi-1.0.0
+"
 
 DOCS=( README.rst )
