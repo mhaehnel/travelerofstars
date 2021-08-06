@@ -28,7 +28,7 @@ RDEPEND="
 	dev-python/flufl-bounce[${PYTHON_USEDEP}]
 	>=dev-python/flufl-i18n-2.0.1[${PYTHON_USEDEP}]
 	>=dev-python/flufl-lock-3.1[${PYTHON_USEDEP}]
-	>=dev-python/importlib_resources-1.5.0[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep '>=dev-python/importlib_resources-1.5[${PYTHON_USEDEP}]' python3_{7,8})
 	www-servers/gunicorn[${PYTHON_USEDEP}]
 	dev-python/lazr-config[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.0[${PYTHON_USEDEP}]
