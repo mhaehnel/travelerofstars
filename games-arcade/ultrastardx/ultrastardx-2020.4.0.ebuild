@@ -12,11 +12,12 @@ SRC_URI="https://github.com/UltraStar-Deluxe/USDX/archive/refs/tags/v${PV}.zip"
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="+projectm webcam"
+#IUSE="projectm"
+IUSE+="webcam"
 
+#	projectm? ( media-libs/libprojectm )
 DEPEND="media-libs/sdl2-image
 	media-libs/libsdl2[opengl]
-	projectm? ( media-libs/libprojectm )
 	webcam? ( media-libs/opencv )
 	media-libs/portaudio
 	media-fonts/dejavu
@@ -38,9 +39,9 @@ src_prepare() {
 	./autogen.sh || die
 }
 
+#$(use_with projectm libprojectM) \
 src_compile() {
 	econf \
-		$(use_with projectm libprojectM) \
 		$(use_with webcam opencv-cxx-api) \
 		|| die "Configure failed!"
 	emake \
