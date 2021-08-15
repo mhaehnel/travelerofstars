@@ -1,0 +1,60 @@
+diff -ur a/src/lib/ffmpeg-4.0/avcodec.pas src/lib/ffmpeg-4.0/avcodec.pas
+--- a/src/lib/ffmpeg-4.0/avcodec.pas	2020-04-29 23:37:06.000000000 +0200
++++ b/src/lib/ffmpeg-4.0/avcodec.pas	2021-08-15 11:11:34.815854878 +0200
+@@ -84,7 +84,7 @@
+ 
+   (* Supported version by this header *)
+   LIBAVCODEC_MAX_VERSION_MAJOR   = 58;
+-  LIBAVCODEC_MAX_VERSION_MINOR   = 54;
++  LIBAVCODEC_MAX_VERSION_MINOR   = 134;
+   LIBAVCODEC_MAX_VERSION_RELEASE = 100;
+   LIBAVCODEC_MAX_VERSION = (LIBAVCODEC_MAX_VERSION_MAJOR * VERSION_MAJOR) +
+                            (LIBAVCODEC_MAX_VERSION_MINOR * VERSION_MINOR) +
+diff -ur a/src/lib/ffmpeg-4.0/avformat.pas src/lib/ffmpeg-4.0/avformat.pas
+--- a/src/lib/ffmpeg-4.0/avformat.pas	2020-04-29 23:37:06.000000000 +0200
++++ b/src/lib/ffmpeg-4.0/avformat.pas	2021-08-15 11:12:05.475853050 +0200
+@@ -63,7 +63,7 @@
+    *)
+   (* Max. supported version by this header *)
+   LIBAVFORMAT_MAX_VERSION_MAJOR   = 58;
+-  LIBAVFORMAT_MAX_VERSION_MINOR   = 29;
++  LIBAVFORMAT_MAX_VERSION_MINOR   = 76;
+   LIBAVFORMAT_MAX_VERSION_RELEASE = 100;
+   LIBAVFORMAT_MAX_VERSION = (LIBAVFORMAT_MAX_VERSION_MAJOR * VERSION_MAJOR) +
+                             (LIBAVFORMAT_MAX_VERSION_MINOR * VERSION_MINOR) +
+diff -ur a/src/lib/ffmpeg-4.0/avutil.pas src/lib/ffmpeg-4.0/avutil.pas
+--- a/src/lib/ffmpeg-4.0/avutil.pas	2020-04-29 23:37:06.000000000 +0200
++++ b/src/lib/ffmpeg-4.0/avutil.pas	2021-08-15 11:10:21.810859229 +0200
+@@ -58,7 +58,7 @@
+ const
+   (* Max. supported version by this header *)
+   LIBAVUTIL_MAX_VERSION_MAJOR   = 56;
+-  LIBAVUTIL_MAX_VERSION_MINOR   = 31;
++  LIBAVUTIL_MAX_VERSION_MINOR   = 70;
+   LIBAVUTIL_MAX_VERSION_RELEASE = 100;
+   LIBAVUTIL_MAX_VERSION = (LIBAVUTIL_MAX_VERSION_MAJOR * VERSION_MAJOR) +
+                           (LIBAVUTIL_MAX_VERSION_MINOR * VERSION_MINOR) +
+diff -ur a/src/lib/ffmpeg-4.0/swresample.pas src/lib/ffmpeg-4.0/swresample.pas
+--- a/src/lib/ffmpeg-4.0/swresample.pas	2020-04-29 23:37:06.000000000 +0200
++++ b/src/lib/ffmpeg-4.0/swresample.pas	2021-08-15 11:12:50.927850341 +0200
+@@ -83,7 +83,7 @@
+ 
+   (* Supported version by this header *)
+   LIBSWRESAMPLE_MAX_VERSION_MAJOR   = 3;
+-  LIBSWRESAMPLE_MAX_VERSION_MINOR   = 5;
++  LIBSWRESAMPLE_MAX_VERSION_MINOR   = 9;
+   LIBSWRESAMPLE_MAX_VERSION_RELEASE = 100;
+   LIBSWRESAMPLE_MAX_VERSION = (LIBSWRESAMPLE_MAX_VERSION_MAJOR * VERSION_MAJOR) +
+                            (LIBSWRESAMPLE_MAX_VERSION_MINOR * VERSION_MINOR) +
+diff -ur a/src/lib/ffmpeg-4.0/swscale.pas src/lib/ffmpeg-4.0/swscale.pas
+--- a/src/lib/ffmpeg-4.0/swscale.pas	2020-04-29 23:37:06.000000000 +0200
++++ b/src/lib/ffmpeg-4.0/swscale.pas	2021-08-15 11:12:20.249852170 +0200
+@@ -77,7 +77,7 @@
+ 
+   (* Max. supported version by this header *)
+   LIBSWSCALE_MAX_VERSION_MAJOR   =  5;
+-  LIBSWSCALE_MAX_VERSION_MINOR   =  5;
++  LIBSWSCALE_MAX_VERSION_MINOR   =  9;
+   LIBSWSCALE_MAX_VERSION_RELEASE =  100;
+   LIBSWSCALE_MAX_VERSION = (LIBSWSCALE_MAX_VERSION_MAJOR * VERSION_MAJOR) +
+                            (LIBSWSCALE_MAX_VERSION_MINOR * VERSION_MINOR) +
