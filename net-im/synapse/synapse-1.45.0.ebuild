@@ -35,6 +35,7 @@ RDEPEND="${PYTHON_DEPS}
         >=dev-python/frozendict-1.2[${PYTHON_USEDEP}]
         >=dev-python/unpaddedbase64-1.1.0[${PYTHON_USEDEP}]
         >=dev-python/canonicaljson-1.4.0[${PYTHON_USEDEP}]
+        >=dev-python/importlib_metadata-4.8.1[${PYTHON_USEDEP}]
         >=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
         >=dev-python/pynacl-1.2.1[${PYTHON_USEDEP}]
 		>=dev-python/idna-2.5[${PYTHON_USEDEP}]
