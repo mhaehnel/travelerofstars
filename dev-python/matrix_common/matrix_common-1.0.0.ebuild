@@ -5,6 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{8,9,10} )
 inherit distutils-r1
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
 
 DESCRIPTION="Common utilities for Synapse, Sydent and Sygnal"
 HOMEPAGE="https://github.com/matrix-org/matrix-python-common"
