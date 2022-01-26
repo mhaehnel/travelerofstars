@@ -33,6 +33,7 @@ IUSE="email ldap openid postgres sqlite url-preview saml2 systemd webclient"
 RDEPEND="${PYTHON_DEPS}
         >=dev-python/jsonschema-3.0.0[${PYTHON_USEDEP}]
         >=dev-python/frozendict-1.2[${PYTHON_USEDEP}]
+        <dev-python/frozendict-2.1.2[${PYTHON_USEDEP}]
         >=dev-python/unpaddedbase64-1.1.0[${PYTHON_USEDEP}]
         >=dev-python/canonicaljson-1.4.0[${PYTHON_USEDEP}]
         >=dev-python/importlib_metadata-4.8.1[${PYTHON_USEDEP}]
