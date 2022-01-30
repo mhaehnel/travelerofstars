@@ -1,15 +1,3 @@
-diff --git a/doc/news.rst b/doc/news.rst
-index d31c7ca97b97ea514c53465c9d6caee3f4df9911..86bfb8665adcb732929aaf9ee434786f1713621c 100644
---- a/doc/news.rst
-+++ b/doc/news.rst
-@@ -12,6 +12,7 @@ News / Changelog
- 
- - Fixed an issue in hyperkitty_import with an empty Message-ID.  (Closes #396)
- - Set Q_CLUSTER retry > timeout in example_project.  (Closes #402)
-+- Require mistune >= 2.0.0 and fix a problem with importing from it. (Closes #395)
- 
- 
- .. _news-1.3.5:
 diff --git a/hyperkitty/lib/renderer.py b/hyperkitty/lib/renderer.py
 index cf54e7c0d67deddadabc352c00625d16bbc5d694..96f026db7071dfece1609552f4c5a5c40b7dc6bc 100644
 --- a/hyperkitty/lib/renderer.py
