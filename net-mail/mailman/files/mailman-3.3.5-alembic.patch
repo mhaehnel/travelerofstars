@@ -1,0 +1,13 @@
+diff --git a/setup.py b/setup.py
+index c2ad69b5de23b9403fe6516f38cfc8cad276b59f..91ad51a93c59086d3ac86221b9c162e572822932 100644
+--- a/setup.py
++++ b/setup.py
+@@ -111,7 +111,7 @@ case second 'm'.  Any other spelling is incorrect.""",
+         },
+     install_requires = [
+         'aiosmtpd>=1.4.1',
+-        'alembic>=1.6.2,<1.7',
++        'alembic>=1.6.2,!=1.7.0',
+         'atpublic',
+         'authheaders>=0.14.0',
+         'authres>=1.0.1',
