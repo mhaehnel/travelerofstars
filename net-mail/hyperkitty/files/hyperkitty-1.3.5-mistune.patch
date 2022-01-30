@@ -1,0 +1,38 @@
+diff --git a/doc/news.rst b/doc/news.rst
+index d31c7ca97b97ea514c53465c9d6caee3f4df9911..86bfb8665adcb732929aaf9ee434786f1713621c 100644
+--- a/doc/news.rst
++++ b/doc/news.rst
+@@ -12,6 +12,7 @@ News / Changelog
+ 
+ - Fixed an issue in hyperkitty_import with an empty Message-ID.  (Closes #396)
+ - Set Q_CLUSTER retry > timeout in example_project.  (Closes #402)
++- Require mistune >= 2.0.0 and fix a problem with importing from it. (Closes #395)
+ 
+ 
+ .. _news-1.3.5:
+diff --git a/hyperkitty/lib/renderer.py b/hyperkitty/lib/renderer.py
+index cf54e7c0d67deddadabc352c00625d16bbc5d694..96f026db7071dfece1609552f4c5a5c40b7dc6bc 100644
+--- a/hyperkitty/lib/renderer.py
++++ b/hyperkitty/lib/renderer.py
+@@ -4,7 +4,7 @@ from django.conf import settings
+ 
+ import mistune
+ from mistune.plugins.extra import plugin_url
+-from mistune.scanner import escape_html, escape_url
++from mistune.util import escape_html, escape_url
+ 
+ 
+ class MyRenderer(mistune.HTMLRenderer):
+diff --git a/setup.py b/setup.py
+index 6cc7636ecd062132ee784180f150f5684340a37d..c16294b0f5937287fcfb5b6f903ce0cc5c80caf5 100755
+--- a/setup.py
++++ b/setup.py
+@@ -45,7 +45,7 @@ REQUIRES = [
+     "pytz>=2012",
+     "django-compressor>=1.3",
+     "mailmanclient>=3.3.3",
+-    "mistune>=2.0.0rc1",
++    "mistune>=2.0.0",
+     "python-dateutil >= 2.0",
+     "networkx>=2.0",
+     "django-haystack>=2.8.0",
