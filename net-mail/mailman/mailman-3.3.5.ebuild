@@ -25,9 +25,9 @@ RDEPEND="
 	>=dev-python/click-8.0[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-1.14.0[${PYTHON_USEDEP}]
 	>=dev-python/falcon-2.0.0[${PYTHON_USEDEP}]
-	dev-python/flufl-bounce[${PYTHON_USEDEP}]
-	>=dev-python/flufl-i18n-2.0.1[${PYTHON_USEDEP}]
-	>=dev-python/flufl-lock-3.1[${PYTHON_USEDEP}]
+	>=dev-python/flufl-bounce-4.0[${PYTHON_USEDEP}]
+	>=dev-python/flufl-i18n-3.2[${PYTHON_USEDEP}]
+	>=dev-python/flufl-lock-5.1[${PYTHON_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/importlib_resources[${PYTHON_USEDEP}]
 	' python3_8)

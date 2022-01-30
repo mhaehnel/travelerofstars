@@ -19,9 +19,9 @@ index cd3645611..6d871fbfd 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -121,7 +121,7 @@ case second 'm'.  Any other spelling is incorrect.""",
-         'flufl.bounce',
-         'flufl.i18n>=2.0',
-         'flufl.lock>=3.1',
+         'flufl.bounce>=4.0',
+         'flufl.i18n>=3.2',
+         'flufl.lock>=5.1',
 -        'importlib_resources>=1.1.0',
 +        'importlib_resources>=1.1.0 ; python_version<"3.9"',
          'gunicorn',
