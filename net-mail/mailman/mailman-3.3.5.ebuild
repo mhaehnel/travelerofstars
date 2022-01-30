@@ -51,7 +51,6 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${P}-py3.9-importlib.patch"
-	"${FILESDIR}/${P}-fix-click-8.patch"
 )
 
 python_test() {

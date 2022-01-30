@@ -43,4 +43,7 @@ BDEPEND="dev-python/isort[${PYTHON_USEDEP}]
 	)"
 
 DOCS=( README.rst )
+PATCHES=(
+        "${FILESDIR}/${P}-mistune.patch"
+)
 S="${WORKDIR}/HyperKitty-${PV}"
