@@ -10,6 +10,7 @@ inherit distutils-r1
 DESCRIPTION="Django-based interfaces interacting with Mailman 3"
 HOMEPAGE="https://www.list.org"
 SRC_URI="https://gitlab.com/mailman/django-mailman3/-/archive/1aa5b0a61a287cdd51436c1a8187e69dc4ddf1ca/django-mailman3-1aa5b0a61a287cdd51436c1a8187e69dc4ddf1ca.tar.gz"
+S="${WORKDIR}/django-mailman3-1aa5b0a61a287cdd51436c1a8187e69dc4ddf1ca"
 
 LICENSE="GPL-3+"
 SLOT="0"
