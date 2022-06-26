@@ -5,7 +5,8 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{7,8,9,10} )
-DISTUTILS_USE_SETUPTOOLS=pyproject.toml
+#DISTUTILS_USE_SETUPTOOLS=pyproject.toml
+DISTUTILS_USE_PEP517=poetry
 
 inherit distutils-r1
 
@@ -59,7 +60,7 @@ RDEPEND="${PYTHON_DEPS}
         >=dev-python/typing-extensions-3.10.0.1[${PYTHON_USEDEP}]
         >=dev-python/cryptography-3.4.7[${PYTHON_USEDEP}]
 		>=dev-python/ijson-3.1.4[${PYTHON_USEDEP}]
-		=dev-python/matrix_common-1.2.1[${PYTHON_USEDEP}]
+		=dev-python/matrix_common-1.1.0[${PYTHON_USEDEP}]
 		>dev-python/packaging-16.1[${PYTHON_USEDEP}]
         virtual/jpeg
         ldap? (
