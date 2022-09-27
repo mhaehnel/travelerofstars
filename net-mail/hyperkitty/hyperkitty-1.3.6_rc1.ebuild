@@ -9,9 +9,8 @@ inherit distutils-r1
 
 DESCRIPTION="A web interface to access GNU Mailman v3 archives"
 HOMEPAGE="https://www.list.org"
-SRC_URI="mirror://pypi/H/HyperKitty/HyperKitty-${PV}.tar.gz"
-SRC_URI="https://gitlab.com/mailman/hyperkitty/-/archive/a42adda58a6faf3f0b0f9987cd6848d7a9853fa8/django-mailman3-a42adda58a6faf3f0b0f9987cd6848d7a9853fa8.tar.gz"
-S="${WORKDIR}/django-mailman3-a42adda58a6faf3f0b0f9987cd6848d7a9853fa8"
+SRC_URI="https://gitlab.com/mailman/hyperkitty/-/archive/a42adda58a6faf3f0b0f9987cd6848d7a9853fa8/hyperkitty-a42adda58a6faf3f0b0f9987cd6848d7a9853fa8.tar.gz"
+S="${WORKDIR}/hyperkitty-a42adda58a6faf3f0b0f9987cd6848d7a9853fa8"
 
 LICENSE="GPL-3+"
 SLOT="0"
