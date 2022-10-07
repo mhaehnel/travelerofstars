@@ -53,7 +53,9 @@ inherit cargo distutils-r1 multiprocessing optfeature systemd
 
 DESCRIPTION="Reference homeserver for the Matrix decentralised comms protocol"
 HOMEPAGE="http://matrix.org https://github.com/matrix-org/synapse"
-SRC_URI="https://github.com/matrix-org/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/matrix-org/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+$(cargo_crate_uris)
+"
 
 LICENSE="Apache-2.0"
 SLOT="0"
