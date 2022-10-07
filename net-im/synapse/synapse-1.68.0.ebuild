@@ -60,7 +60,7 @@ RDEPEND="${PYTHON_DEPS}
         >=dev-python/typing-extensions-3.10.0.1[${PYTHON_USEDEP}]
         >=dev-python/cryptography-3.4.7[${PYTHON_USEDEP}]
 		>=dev-python/ijson-3.1.4[${PYTHON_USEDEP}]
-		=dev-python/matrix_common-1.3.0[${PYTHON_USEDEP}]
+		=dev-python/matrix-common-1.3.0[${PYTHON_USEDEP}]
 		>dev-python/packaging-16.1[${PYTHON_USEDEP}]
 		>=dev-lang/rust-1.58.1
         virtual/jpeg
