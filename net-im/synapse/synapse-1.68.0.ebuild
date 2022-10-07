@@ -82,6 +82,7 @@ RDEPEND="${PYTHON_DEPS}
         >=dev-python/canonicaljson-1.5.0[${PYTHON_USEDEP}]
         >=dev-python/signedjson-1.1.0[${PYTHON_USEDEP}]
 		>=dev-python/idna-2.5[${PYTHON_USEDEP}]
+		dev-python/pydantic[${PYTHON_USEDEP}]
         >=dev-python/service_identity-18.1.0[${PYTHON_USEDEP}]
         >=dev-python/twisted-18.9.0[${PYTHON_USEDEP}]
         >=dev-python/treq-15.1[${PYTHON_USEDEP}]
