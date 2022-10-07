@@ -63,6 +63,7 @@ RDEPEND="${PYTHON_DEPS}
 		=dev-python/matrix-common-1.3.0[${PYTHON_USEDEP}]
 		>dev-python/packaging-16.1[${PYTHON_USEDEP}]
 		>=dev-lang/rust-1.58.1
+		dev-python/setuptools-rust[${PYTHON_USEDEP}]
         virtual/jpeg
         ldap? (
                 >=dev-python/matrix-synapse-ldap3-0.1.4[${PYTHON_USEDEP}]
