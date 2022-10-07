@@ -48,8 +48,8 @@ CRATES="
        windows_x86_64_msvc-0.36.1
 "
 
-#inherit cargo distutils-r1 multiprocessing optfeature systemd
-inherit distutils-r1
+inherit cargo distutils-r1 multiprocessing optfeature systemd
+#inherit distutils-r1
 
 DESCRIPTION="Reference homeserver for the Matrix decentralised comms protocol"
 HOMEPAGE="http://matrix.org https://github.com/matrix-org/synapse"
