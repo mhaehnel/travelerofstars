@@ -53,7 +53,6 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${P}-py3.9-importlib.patch"
-	"${FILESDIR}/${P}-alembic.patch"
 )
 
 python_test() {
