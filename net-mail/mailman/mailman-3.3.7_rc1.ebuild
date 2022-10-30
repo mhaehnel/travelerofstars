@@ -8,8 +8,8 @@ inherit distutils-r1
 
 DESCRIPTION="Mailman -- the GNU mailing list manager"
 HOMEPAGE="https://www.list.org"
-SRC_URI="https://gitlab.com/mailman/mailman/-/archive/fd8c152a0b3693dc83c4d188b71a98bcfa90b4a8/mailman-fd8c152a0b3693dc83c4d188b71a98bcfa90b4a8.tar.gz"
-S="${WORKDIR}/mailman-fd8c152a0b3693dc83c4d188b71a98bcfa90b4a8"
+SRC_URI="https://gitlab.com/mailman/mailman/-/archive/e91107ace577d8fb3ae796ea1d5b81df8e0d2533/mailman-e91107ace577d8fb3ae796ea1d5b81df8e0d2533.tar.gz"
+S="${WORKDIR}/mailman-e91107ace577d8fb3ae796ea1d5b81df8e0d2533"
 
 
 LICENSE="GPL-3+"
