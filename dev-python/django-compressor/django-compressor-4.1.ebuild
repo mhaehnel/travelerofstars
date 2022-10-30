@@ -19,8 +19,8 @@ KEYWORDS="~amd64"
 RESTRICT="test"
 
 RDEPEND=">=dev-python/django-appconf-1.0.3[${PYTHON_USEDEP}]
-	=dev-python/rcssmin-1.1.0[${PYTHON_USEDEP}]
-	=dev-python/rjsmin-1.2[${PYTHON_USEDEP}]
+	>=dev-python/rcssmin-1.1.0[${PYTHON_USEDEP}]
+	>=dev-python/rjsmin-1.2[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]"
 
 python_test() {
