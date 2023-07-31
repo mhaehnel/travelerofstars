@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7,8,9} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1 git-r3
 
@@ -15,10 +15,10 @@ EGIT_COMMIT="v${PV}"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 amd64"
-IUSE="test"
+IUSE="test frozendict"
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}
         >=dev-python/simplejson-3.14.0[${PYTHON_USEDEP}]
-        >=dev-python/frozendict-1.0[${PYTHON_USEDEP}]
+        frozendict? ( >=dev-python/frozendict-1.0[${PYTHON_USEDEP}] )
 "
