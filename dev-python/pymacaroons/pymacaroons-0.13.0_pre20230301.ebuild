@@ -4,14 +4,14 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{5,6,7,8,9} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Python implementation of Macaroons"
 HOMEPAGE="https://github.com/ecordell/pymacaroons"
 EGIT_REPO_URI="https://github.com/ecordell/pymacaroons.git"
-EGIT_COMMIT="v${PV}"
+EGIT_COMMIT="78c55c1d33a0b23ddc71140a9c999f957d79e9dd"
 
 LICENSE="MIT"
 SLOT="0"
