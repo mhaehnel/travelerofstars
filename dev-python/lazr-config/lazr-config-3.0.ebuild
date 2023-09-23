@@ -4,16 +4,15 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
-inherit distutils-r1
+PYPI_PN=${PN/-/.}
+PYPI_NO_NORMALIZE=1
 
-MY_PN=${PN/-/.}
+inherit distutils-r1 pypi
 
 DESCRIPTION="Create configuration schemas, and process and validate configurations"
 HOMEPAGE="https://code.launchpad.net/lazr.config"
-SRC_URI="mirror://pypi/${MY_PN:0:1}/${MY_PN}/${MY_PN}-${PV}.tar.gz -> ${P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${PV}"
 
 LICENSE="LGPL-3"
 SLOT="0"
