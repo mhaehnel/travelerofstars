@@ -4,9 +4,11 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
-inherit distutils-r1
+PYPI_NO_NORMALIZE=1
+
+inherit distutils-r1 pypi
 
 DESCRIPTION="Django 3rd party (social) account authentication"
 HOMEPAGE="
@@ -14,8 +16,6 @@ HOMEPAGE="
 	https://github.com/pennersr/django-allauth/
 	https://pypi.org/project/django-allauth/
 "
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
-
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
@@ -23,10 +23,10 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	dev-python/django[${PYTHON_USEDEP}]
-	dev-python/pyjwt[${PYTHON_USEDEP}]
-	dev-python/python3-openid[${PYTHON_USEDEP}]
-	dev-python/requests-oauthlib[${PYTHON_USEDEP}]
+	>=dev-python/django-3.2[${PYTHON_USEDEP}]
+	>=dev-python/pyjwt-1.7[${PYTHON_USEDEP}]
+	>=dev-python/python3-openid-3.0.8[${PYTHON_USEDEP}]
+	>=dev-python/requests-oauthlib-0.3.0[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
 "
 # cryptography via pyjwt[crypto]
