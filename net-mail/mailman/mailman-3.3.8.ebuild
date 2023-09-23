@@ -3,12 +3,13 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit distutils-r1
 
 DESCRIPTION="Mailman -- the GNU mailing list manager"
 HOMEPAGE="https://www.list.org"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://gitlab.com/mailman/${PN}/-/archive/${PV}/${P}.tar.gz"
+
 
 LICENSE="GPL-3+"
 SLOT="3"
@@ -17,20 +18,17 @@ IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-python/aiosmtpd-1.4.1[${PYTHON_USEDEP}]
+	>=dev-python/aiosmtpd-1.4.3[${PYTHON_USEDEP}]
 	dev-python/alembic[${PYTHON_USEDEP}]
 	dev-python/atpublic[${PYTHON_USEDEP}]
-	>=dev-python/authheaders-0.13.0[${PYTHON_USEDEP}]
+	>=dev-python/authheaders-0.15.2[${PYTHON_USEDEP}]
 	>=dev-python/authres-1.0.1[${PYTHON_USEDEP}]
 	>=dev-python/click-8.0[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-1.14.0[${PYTHON_USEDEP}]
-	>=dev-python/falcon-2.0.0[${PYTHON_USEDEP}]
+	>=dev-python/falcon-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/flufl-bounce-4.0[${PYTHON_USEDEP}]
 	>=dev-python/flufl-i18n-3.2[${PYTHON_USEDEP}]
 	>=dev-python/flufl-lock-5.1[${PYTHON_USEDEP}]
-	$(python_gen_cond_dep '
-		dev-python/importlib_resources[${PYTHON_USEDEP}]
-	' python3_8)
 	www-servers/gunicorn[${PYTHON_USEDEP}]
 	dev-python/lazr-config[${PYTHON_USEDEP}]
 	>=dev-python/python-dateutil-2.0[${PYTHON_USEDEP}]
@@ -48,12 +46,6 @@ BDEPEND="
 		virtual/python-greenlet[${PYTHON_USEDEP}]
 	)
 "
-
-PATCHES=(
-	"${FILESDIR}/${P}-py3.9-importlib.patch"
-	"${FILESDIR}/${P}-alembic.patch"
-)
-
 python_test() {
 	distutils_install_for_testing --via-venv
 	"${EPYTHON}" -m nose2 -vv || die "Tests failed with ${EPYTHON}"
