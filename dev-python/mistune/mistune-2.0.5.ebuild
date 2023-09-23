@@ -10,7 +10,7 @@ inherit distutils-r1 pypi
 DESCRIPTION="A sane and fast Markdown parser with useful plugins and renderers"
 HOMEPAGE="https://github.com/lepture/mistune"
 
-LICENSE="BSD-3"
+LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
