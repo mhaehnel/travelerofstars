@@ -3,13 +3,14 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7,8,9} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
 DESCRIPTION="A web interface to access GNU Mailman v3 archives"
 HOMEPAGE="https://www.list.org"
-SRC_URI="mirror://pypi/m/mailman-hyperkitty/mailman-hyperkitty-${PV}.tar.gz"
+SRC_URI="https://gitlab.com/mailman/${PN}/-/archive/${PV}/${P}.tar.gz"
+
 
 LICENSE="GPL-3+"
 SLOT="0"
