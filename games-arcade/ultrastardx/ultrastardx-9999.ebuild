@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils flag-o-matic autotools git-r3
+inherit flag-o-matic autotools git-r3
 
 DESCRIPTION="A free and open source karaoke game"
 HOMEPAGE="https://usdx.eu"
