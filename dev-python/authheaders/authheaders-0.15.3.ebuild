@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -13,7 +13,7 @@ HOMEPAGE="
 	https://pypi.org/project/authheaders/
 	https://github.com/ValiMail/authentication-headers/
 "
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://github.com/ValiMail/authentication-headers/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
