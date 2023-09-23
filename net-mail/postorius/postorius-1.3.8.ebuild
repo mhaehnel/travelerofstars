@@ -3,13 +3,13 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{8..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
 DESCRIPTION="A web user interface for GNU Mailman 3"
 HOMEPAGE="https://www.list.org"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+SRC_URI="https://gitlab.com/mailman/${PN}/-/archive/${PV}/${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
@@ -18,8 +18,8 @@ KEYWORDS="~amd64"
 RDEPEND="
 	dev-python/django[${PYTHON_USEDEP}]
 	dev-python/readme_renderer[${PYTHON_USEDEP}]
-	net-mail/django-mailman3[${PYTHON_USEDEP}]
-	net-mail/mailmanclient[${PYTHON_USEDEP}]
+	>=net-mail/django-mailman3-1.3.8[${PYTHON_USEDEP}]
+	>=net-mail/mailmanclient-3.3.3[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
