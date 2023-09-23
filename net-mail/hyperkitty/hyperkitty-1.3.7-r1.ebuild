@@ -17,7 +17,7 @@ KEYWORDS="~amd64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="<dev-python/django-4.2[${PYTHON_USEDEP}]
+RDEPEND="<dev-python/django-4.3[${PYTHON_USEDEP}]
 	>=net-mail/django-mailman3-1.3.8[${PYTHON_USEDEP}]
 	>=dev-python/django-gravatar2-1.0.6[${PYTHON_USEDEP}]
 	dev-python/djangorestframework[${PYTHON_USEDEP}]
