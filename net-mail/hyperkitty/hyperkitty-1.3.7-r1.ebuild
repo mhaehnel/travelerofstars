@@ -42,6 +42,3 @@ BDEPEND="dev-python/isort[${PYTHON_USEDEP}]
 	)"
 
 DOCS=( README.rst )
-#PATCHES=(
-#)
-S="${WORKDIR}/HyperKitty-${PV}"
