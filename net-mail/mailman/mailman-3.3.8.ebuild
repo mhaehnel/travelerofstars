@@ -21,7 +21,7 @@ RDEPEND="
 	>=dev-python/aiosmtpd-1.4.3[${PYTHON_USEDEP}]
 	dev-python/alembic[${PYTHON_USEDEP}]
 	dev-python/atpublic[${PYTHON_USEDEP}]
-	>=dev-python/authheaders-0.15.2[${PYTHON_USEDEP}]
+	>=dev-python/authentication-headers-0.15.2[${PYTHON_USEDEP}]
 	>=dev-python/authres-1.0.1[${PYTHON_USEDEP}]
 	>=dev-python/click-8.0[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-1.14.0[${PYTHON_USEDEP}]

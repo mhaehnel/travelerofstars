@@ -13,7 +13,7 @@ HOMEPAGE="
 	https://pypi.org/project/authheaders/
 	https://github.com/ValiMail/authentication-headers/
 "
-SRC_URI="https://github.com/ValiMail/authentication-headers/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/ValiMail/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
