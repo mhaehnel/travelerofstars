@@ -21,5 +21,3 @@ DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/six[${PYTHON_USEDEP}]"
 RDEPEND="dev-python/django[${PYTHON_USEDEP}]"
 
-DOCS="README.rst"
-
