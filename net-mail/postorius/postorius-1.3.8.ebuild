@@ -17,7 +17,7 @@ KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-python/django[${PYTHON_USEDEP}]
-	dev-python/readme_renderer[${PYTHON_USEDEP}]
+	dev-python/readme-renderer[${PYTHON_USEDEP}]
 	>=net-mail/django-mailman3-1.3.8[${PYTHON_USEDEP}]
 	>=net-mail/mailmanclient-3.3.3[${PYTHON_USEDEP}]
 "
