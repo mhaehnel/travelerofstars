@@ -5,6 +5,7 @@ EAPI=7
 
 PYTHON_COMPAT=( python3_{8..11} )
 
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Allows synapse to use LDAP as a password provider."
