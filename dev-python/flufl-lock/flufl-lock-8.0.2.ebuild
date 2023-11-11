@@ -12,7 +12,7 @@ MY_P=${P/-/.}
 DESCRIPTION="A high level API for Python internationalization"
 HOMEPAGE="https://gitlab.com/warsaw/flufl.lock"
 SRC_URI="mirror://pypi/${PN::1}/${PN/-/.}/${P/-/_}.tar.gz"
-S="${WORKDIR}/${MY_P}"
+S="${WORKDIR}/${P/-/_}"
 
 LICENSE="Apache-2.0"
 SLOT="0"
