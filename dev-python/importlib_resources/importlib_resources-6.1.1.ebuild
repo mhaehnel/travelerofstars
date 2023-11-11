@@ -28,9 +28,7 @@ RDEPEND="
 		>=dev-python/zipp-3.1.0[${PYTHON_USEDEP}]
 	' pypy3)
 "
-BDEPEND="
-	>=dev-python/setuptools_scm-3.4.1[${PYTHON_USEDEP}]
-"
+BDEPEND=""
 
 distutils_enable_tests unittest
 distutils_enable_sphinx docs dev-python/rst-linker dev-python/jaraco-packaging
