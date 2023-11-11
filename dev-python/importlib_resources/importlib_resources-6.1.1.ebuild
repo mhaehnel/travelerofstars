@@ -6,12 +6,18 @@ EAPI=8
 # This is a backport of Python 3.9's importlib.resources
 # also enable for Python 3.9 for backwards compatibility (mailman)
 
-PYTHON_COMPAT=( pypy3 python3_{9,10,11} )
-inherit distutils-r1
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( pypy3 python3_{8,9,10,11} )
+
+PYPI_PN=${PN/-/.}
+PYPI_NO_NORMALIZE=1
+
+inherit distutils-r1 pypi
+
 
 DESCRIPTION="Read resources from Python packages"
 HOMEPAGE="https://github.com/python/importlib_resources"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+#SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
