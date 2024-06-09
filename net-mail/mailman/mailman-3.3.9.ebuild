@@ -17,6 +17,8 @@ KEYWORDS="~amd64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
+PATCHES=( "${FILESDIR}/importlib.patch" )
+
 RDEPEND="
 	>=dev-python/aiosmtpd-1.4.3[${PYTHON_USEDEP}]
 	dev-python/alembic[${PYTHON_USEDEP}]
