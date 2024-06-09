@@ -9,7 +9,7 @@ inherit distutils-r1
 DESCRIPTION="Mailman -- the GNU mailing list manager"
 HOMEPAGE="https://www.list.org"
 SRC_URI="https://gitlab.com/mailman/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
-
+S="${WORKDIR}/${PN}-v${PV}"
 
 LICENSE="GPL-3+"
 SLOT="3"
