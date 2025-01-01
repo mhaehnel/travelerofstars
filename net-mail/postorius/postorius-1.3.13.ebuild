@@ -4,6 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{9..13} )
+DISTUTILS_USE_PEP517=pdm-backend
 
 inherit distutils-r1
 
