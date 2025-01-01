@@ -4,8 +4,11 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{8..12} )
+DISTUTILS_USE_PEP517=setuptools
+
 
 inherit distutils-r1 pypi
+
 
 DESCRIPTION="Pluggable search for Django"
 HOMEPAGE="https://haystacksearch.org/"
