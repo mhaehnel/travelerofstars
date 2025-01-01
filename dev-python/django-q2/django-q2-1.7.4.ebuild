@@ -23,4 +23,6 @@ RDEPEND=">=dev-python/django-4.2[${PYTHON_USEDEP}]
 	>=dev-python/blessed-1.19.1[${PYTHON_USEDEP}]
 "
 
-DOCS=( README.rst )
+DOCS=( README.rst CHANGELOG.md )
+
+PATCHES=( "${FILESDIR}/changelog-install.patch" )
