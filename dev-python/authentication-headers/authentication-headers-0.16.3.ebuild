@@ -23,7 +23,7 @@ RDEPEND="
 	>=dev-python/authres-1.2.0[${PYTHON_USEDEP}]
 	>=dev-python/dkimpy-0.7.1[${PYTHON_USEDEP}]
 	dev-python/dnspython[${PYTHON_USEDEP}]
-	>=dev-python/publicsuffix-2.20191221-r2[${PYTHON_USEDEP}]
+	>=dev-python/publicsuffix2-2.20191221-r2[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest
