@@ -22,31 +22,35 @@ RESTRICT="!test? ( test )"
 
 RDEPEND="
 	>=dev-python/django-4.2.16[${PYTHON_USEDEP}]
-	>=dev-python/pyjwt-1.7[${PYTHON_USEDEP}]
+	>=dev-python/pyjwt-2.0[${PYTHON_USEDEP}]
+	<dev-python/pyjwt-3[${PYTHON_USEDEP}]
 	>=dev-python/python3-openid-3.0.8[${PYTHON_USEDEP}]
-	>=dev-python/requests-oauthlib-0.3.0[${PYTHON_USEDEP}]
-	>=dev-python/requests-2.0[${PYTHON_USEDEP}]
-    >=dev-python/asgiref-3.8.1[${PYTHON_USEDEP}]
+	>=dev-python/oauthlib-3.3.0[${PYTHON_USEDEP}]
+	<dev-python/oauthlib-4[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.0.0[${PYTHON_USEDEP}]
+	<dev-python/requests-3[${PYTHON_USEDEP}]
+	>=dev-python/asgiref-3.8.1[${PYTHON_USEDEP}]
 "
 # cryptography via pyjwt[crypto]
 RDEPEND+="
 	dev-python/cryptography[${PYTHON_USEDEP}]
 "
 BDEPEND="
+	dev-python/setuptools-scm[${PYTHON_USEDEP}]
 	test? ( ${RDEPEND} )
 "
 
+export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
+
 DOCS=( README.rst AUTHORS ChangeLog.rst )
 
-src_test() {
-	# cern provider tests require Internet
-	rm allauth/socialaccount/providers/cern/tests.py || die
-	distutils-r1_src_test
-}
+distutils_enable_tests pytest
+distutils_enable_sphinx docs \
+	dev-python/sphinx-rtd-theme
 
-python_test() {
-	local -x DJANGO_SETTINGS_MODULE=test_settings
-	local -x PYTHONPATH=.
-	django-admin test -v 2 || die "Tests failed with ${EPYTHON}"
+pkg_postinst() {
+	optfeature "MFA (Multi-factor authentication)" dev-python/qrcode dev-python/fido2
+	optfeature "OpenID or Steam" dev-python/python3-openid
+	optfeature "SAML authentication" dev-python/python3-saml
 }
 
