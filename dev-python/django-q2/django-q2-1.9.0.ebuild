@@ -24,4 +24,4 @@ RDEPEND=">=dev-python/django-4.2[${PYTHON_USEDEP}]
 
 DOCS=( README.rst CHANGELOG.md )
 
-PATCHES=( "${FILESDIR}/changelog-install.patch" )
+# PATCHES=( "${FILESDIR}/changelog-install.patch" )
