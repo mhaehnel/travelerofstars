@@ -1,9 +1,9 @@
 # Copyright 2021 Marcus Haehnel
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{8..12} )
+PYTHON_COMPAT=( python3_{8..14} )
 
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 git-r3
