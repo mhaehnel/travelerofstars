@@ -7,7 +7,8 @@ DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..14} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
+
 
 DESCRIPTION="A supersonic micro-framework for building cloud APIs"
 HOMEPAGE="
