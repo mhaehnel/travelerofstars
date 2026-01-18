@@ -1,10 +1,10 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{9..13} )
 DISTUTILS_USE_PEP517=pdm-backend
+PYTHON_COMPAT=( python3_{9..13} )
 
 inherit distutils-r1
 
@@ -23,7 +23,7 @@ RDEPEND="
 	>=dev-python/aiosmtpd-1.4.3[${PYTHON_USEDEP}]
 	>=dev-python/alembic-1.6.2[${PYTHON_USEDEP}]
 	dev-python/atpublic[${PYTHON_USEDEP}]
-	>=dev-python/authentication-headers-0.16[${PYTHON_USEDEP}]
+	>=dev-python/authheaders-0.16[${PYTHON_USEDEP}]
 	>=dev-python/authres-1.0.1[${PYTHON_USEDEP}]
 	>=dev-python/click-8.0[${PYTHON_USEDEP}]
 	>=dev-python/dnspython-1.14.0[${PYTHON_USEDEP}]
